@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.frameworks   = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreTelephony', 'AdSupport'
   s.libraries    = 'z', 'sqlite3', 'icucore'
 
+  s.xcconfig = {'BITCODE_GENERATION_MODE' => 'bitcode'}
+
   s.ios.vendored_frameworks = 'AnalysysSDK/IDFA/*.framework'
 
 end
